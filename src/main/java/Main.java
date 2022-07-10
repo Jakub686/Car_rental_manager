@@ -14,6 +14,5 @@ public class Main {
             String command = scanner.nextLine();
             console.run(command);
         }
-
     }
 }
