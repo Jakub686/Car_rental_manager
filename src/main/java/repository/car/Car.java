@@ -1,5 +1,8 @@
 package repository.car;
 
+import lombok.Data;
+
+@Data
 public class Car {
     private int id;
     private String name;
@@ -10,15 +13,4 @@ public class Car {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getCompanyId() {
-        return companyId;
-    }
 }
