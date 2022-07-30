@@ -24,7 +24,6 @@ public class CompanyDaoImpl implements CompanyDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = //"DROP TABLE IF EXISTS CAR;" +
@@ -68,7 +67,6 @@ public class CompanyDaoImpl implements CompanyDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "INSERT INTO company (name) VALUES ('" + name + "')";
@@ -108,7 +106,6 @@ public class CompanyDaoImpl implements CompanyDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "SELECT * FROM company";
@@ -152,7 +149,6 @@ public class CompanyDaoImpl implements CompanyDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "SELECT name FROM company WHERE id =" + companyId;

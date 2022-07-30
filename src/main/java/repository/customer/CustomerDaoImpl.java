@@ -25,7 +25,6 @@ public class CustomerDaoImpl implements CustomerDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "CREATE TABLE IF NOT EXISTS customer (" +

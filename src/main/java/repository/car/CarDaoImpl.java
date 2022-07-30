@@ -25,7 +25,6 @@ public class CarDaoImpl implements CarDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = //"DROP TABLE IF EXISTS CAR;" +
@@ -70,11 +69,9 @@ public class CarDaoImpl implements CarDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "SELECT name FROM car WHERE company_id =" + company_id + "";
-
 
             ResultSet rs = stmt.executeQuery(sql);
 
@@ -114,7 +111,6 @@ public class CarDaoImpl implements CarDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "INSERT INTO car (name,company_id) VALUES ('" + car + "'," + company_id + ")";
@@ -154,7 +150,6 @@ public class CarDaoImpl implements CarDao {
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL);
-
             stmt = conn.createStatement();
 
             String sql = "SELECT name FROM car WHERE id = " + carId;
