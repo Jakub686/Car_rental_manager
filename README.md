@@ -1,5 +1,4 @@
 # Car_rental_manager
 triple layer relational database (foreign key), maven, lombok
 
-example
-![image](https://user-images.githubusercontent.com/80157748/181877439-6b93caea-68cb-444a-b5f2-1c3117c536e5.png)
+![image](https://user-images.githubusercontent.com/80157748/181877666-6d68fc4a-9b64-4afc-8b47-3a635662e69b.png)
